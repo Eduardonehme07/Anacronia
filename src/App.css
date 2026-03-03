@@ -1,0 +1,50 @@
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/cadeado.png');
+  background-size: cover;
+  background-position: center;
+  transition: opacity 1s ease;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.lock-area {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.input-overlay {
+  position: fixed;
+  top: 90%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.6);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.input-overlay input {
+  padding: 10px;
+  font-size: 18px;
+}
+
+.input-overlay button {
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
